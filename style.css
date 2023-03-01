@@ -1,0 +1,26 @@
+body {
+    background-color: darkkhaki;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+header {
+    background: rgb(55,55,55);
+    padding: 10px;
+}
+input {
+    border:none;
+    font-size: 20px;
+    height: 40px;
+    padding: 10px;
+}
+button {
+    padding: 5px 7px;
+    margin: 15px;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: azure;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+}

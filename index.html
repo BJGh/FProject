@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
     <meta charset="utf-8">
-    <title>FP</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Dissertation Survey</title>
 </html>
 <body>
     <form method="post">
-        <p><input placeholder="Enter name" required="ture" name="name"></p>
-        <p><textarea id="fpTextArea" name="fingerprint" readonly="true" required="true" cols="50" rows="20"></textarea></p>
+        <p><h1>Dissertation Survey: Browser Fingerprinting</h1></p>
+        <p><input placeholder="Enter name" name="name" id="name" readonly="true"></p>
+        <p><h2>your fingerprint:</h2></p>
+       <p><textarea  id="fpTextArea" name="fingerprint" readonly="true" required="true" cols="50" rows="20"></textarea></p>
         <p><input type="submit" value="Send"></p>
     </form>
 
@@ -30,6 +33,19 @@
             // xhr.setRequestHeader("Content-Type", "application/json");
             // xhr.send(JSON.stringify(result.components));
         })
+        function randomNumber(len) {
+            var randomNumber;
+            var n = '';
+
+            for (var count = 0; count < len; count++) {
+                 randomNumber = Math.floor(Math.random() * 10);
+                n += randomNumber.toString();
+            }
+            return n;
+        }
+        window.onload = function() {
+        document.getElementById("name").value = randomNumber(3);
+        };
     </script>
 
 </body>

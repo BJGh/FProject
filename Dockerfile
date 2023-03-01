@@ -1,0 +1,6 @@
+FROM python:3.8
+
+ENV PORT 5555
+ENV HOST 0.0.0.0
+
+RUN python
